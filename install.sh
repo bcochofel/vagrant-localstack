@@ -5,3 +5,6 @@ sudo apt install python3 python3-pip -y
 
 # install localstack
 pip3 install localstack
+
+# start localstack locally
+localstack start --host
