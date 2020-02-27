@@ -29,7 +29,9 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "localstack.local.dev"
 
   config.vm.network :private_network, ip: "192.168.77.105"
-  config.vm.network :forwarded_port, guest: 4567, host: 4567
+  for i in 4567..4599
+    config.vm.network :forwarded_port, guest: i, host: i
+  end
 
   config.vm.provider "virtualbox" do |vb|
     vb.gui = false
