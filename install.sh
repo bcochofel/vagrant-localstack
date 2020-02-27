@@ -9,5 +9,8 @@ pip3 install docker-compose
 # install localstack
 pip3 install "localstack[full]"
 
+# start localstack in docker
+# localstack start
+
 # start localstack locally
-localstack start --host
+# localstack start --host
